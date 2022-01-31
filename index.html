@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
     <!-- <link rel="stylesheet" href="https://at.alicdn.com/t/font_3166956_xl1ufno3r6k.css"> -->
+    <link rel="stylesheet" href="vplugin.css">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -34,28 +36,69 @@
         <div id="body">
           <div class="body-title">episodes</div>
           <div class="body-content">
+            <div class="body-content-cards">
             <div class="body-content-card">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+                <video 
+                width="100%"
+                controls
+                poster="https://niofile.oss-cn-beijing.aliyuncs.com/%5BHYSUB%5DSono%20Bisque%20Doll%20wa%20Koi%20wo%20Suru%5B01%5D%5BGB_MP4%5D%5B1920X1080%5D.mp4?x-oss-process=video/snapshot,t_10000,f_jpg"
+                class="video-js" data-setup="{}" id="mainVideo"  webkit-playsinline="true"  playsinline="true">
+                <source id="videoSource" type="video/mp4"   src="https://niofile.oss-cn-beijing.aliyuncs.com/%5BHYSUB%5DSono%20Bisque%20Doll%20wa%20Koi%20wo%20Suru%5B01%5D%5BGB_MP4%5D%5B1920X1080%5D.mp4"/>
+                </video><time>28.3 min</time></div>
+           <div class="body-content-card">
+                <video 
+                width="100%"
+                controls
+                poster="https://niofile.oss-cn-beijing.aliyuncs.com/%5BHYSUB%5DSono%20Bisque%20Doll%20wa%20Koi%20wo%20Suru%5B02%5D%5BGB_MP4%5D%5B1920X1080%5D.mp4?x-oss-process=video/snapshot,t_10000,f_jpg"
+                class="video-js" data-setup="{}" id="mainVideo"  webkit-playsinline="true"  playsinline="true">
+                <source id="videoSource" type="video/mp4"   src="https://niofile.oss-cn-beijing.aliyuncs.com/%5BHYSUB%5DSono%20Bisque%20Doll%20wa%20Koi%20wo%20Suru%5B02%5D%5BGB_MP4%5D%5B1920X1080%5D.mp4"/>
+                </video><time>18.4 min</time></div>
+              
+           <div class="body-content-card">
+                <video 
+                width="100%"
+                controls
+                poster="https://niofile.oss-cn-beijing.aliyuncs.com/%5BNekomoe%20kissaten%5D%5BSono%20Bisque%20Doll%20wa%20Koi%20wo%20Suru%5D%5B03%5D%5B1080p%5D%5BCHS%5D.mp4?x-oss-process=video/snapshot,t_10000,f_jpg"
+                class="video-js" data-setup="{}" id="mainVideo"  webkit-playsinline="true"  playsinline="true">
+                <source id="videoSource"  type="video/mp4"  src="https://niofile.oss-cn-beijing.aliyuncs.com/%5BNekomoe%20kissaten%5D%5BSono%20Bisque%20Doll%20wa%20Koi%20wo%20Suru%5D%5B03%5D%5B1080p%5D%5BCHS%5D.mp4"/>
+                </video><time>23.6 min</time></div>
+              
+           <div class="body-content-card">
+                <video 
+                width="100%"
+                controls
+                poster="https://niofile.oss-cn-beijing.aliyuncs.com/%5BNekomoe%20kissaten%5D%5BSono%20Bisque%20Doll%20wa%20Koi%20wo%20Suru%5D%5B04%5D%5B1080p%5D%5BCHS%5D.mp4?x-oss-process=video/snapshot,t_10000,f_jpg"
+                class="video-js" data-setup="{}" id="mainVideo"  webkit-playsinline="true"  playsinline="true">
+                <source id="videoSource" type="video/mp4"  src="https://niofile.oss-cn-beijing.aliyuncs.com/%5BNekomoe%20kissaten%5D%5BSono%20Bisque%20Doll%20wa%20Koi%20wo%20Suru%5D%5B04%5D%5B1080p%5D%5BCHS%5D.mp4"/>
+                </video><time>23.6 min</time></div>
+
            </div>
           </div>
         </div>
       </div>
+      <script>
+        // document.querySelectorAll("video").forEach(v=>{
+        //   v.onmouseover=function(){
+        //     v.setAttribute("controls","true")
+        //   };
+        //   v.onmouseout=function(){
+        //     v.removeAttribute("controls");
+        //     // v.setAttribute("controls","false")
+        //   }
+        // })
+      </script>
       <script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
               <script>
               
               BetterScroll.createBScroll(document.querySelector(".body-content"), {
                   movable: true,
                   scrollX: true,
+                  scrollY:false,
                   minSize :1,
                   scrollbar: true, 
                   mouseWheel: true,
                   click:true,});
               </script>
+    <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
 </body>
 </html>
