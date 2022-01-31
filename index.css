@@ -1,0 +1,126 @@
+@import url("https://at.alicdn.com/t/font_3166956_xl1ufno3r6k.css");
+*,*::before,*::after{
+  margin:0;padding:0;
+  box-sizing:border-box;
+}
+body{
+min-height: 100vh;
+    background: radial-gradient(circle at right,#0000 0%,#000 70%),url(https://s2.loli.net/2022/01/13/ajzL2MBHNdrFYRu.jpg) no-repeat , #000;
+    background-size: 100% 100%,77% auto,100% 100%;
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-position: right center,100% 50%,center center;
+}
+#main{
+  padding-left:3vw;
+}
+#main #header{
+  line-height:5vw;
+  margin-top:10vh;
+  width:30vw;
+  color:white;font-family:Sans-serif;
+}
+#main #header h1{
+  font-size:3vw;
+}
+#main #header .header-category-name{
+font-size:1.3rem;}
+#main #header .header-desc{
+  color:#cccccc;
+  line-height:3vh;
+  word-break: break-all;
+overflow:hidden; 
+text-overflow:ellipsis; 
+display:-webkit-box;
+ -webkit-box-orient:vertical;  
+-webkit-line-clamp:3; 
+}
+#main #header .header-category-name{
+text-transform: uppercase;
+}
+#main #header .header-state i{
+font-style:normal;
+}
+#main #header .header-state i span{
+  margin-left:3px;
+}
+#main #body{
+  color:#fff;font-family:Sans-serif;margin-top:10vh;
+}
+#main #body .body-title{
+  font-size:1.7rem;text-transform: capitalize;margin-bottom:3vh;
+}
+#main #body .body-content{
+    overflow:hidden;
+    white-space:nowrap;
+    position: relative;
+}
+#main #body .body-content .body-content-card {
+  display:flex;
+  width: fit-content;
+  
+}
+#main #body .body-content .body-content-card div:not(:first-child){
+  margin-left:20px;
+}
+#main #body .body-content .body-content-card div{
+     min-width: 270px;
+    min-height: 170px;
+  background:red;
+  border-radius:7px;
+  
+}
+#main #body .body-content .body-content-card div:nth-child(1){
+  background:url("https://images.anime-pictures.net/b7b/b7bc6d6faa0ee4e97c160d85cc073b2c.png?if=ANIME-PICTURES.NET_-_740030-2400x1500-virtual+youtuber-nijisanji-sister+cleaire-ytuorvi-single-long+hair.png");
+  background-size:auto 100%;
+}
+#main #body .body-content .body-content-card div:nth-child(2){
+  background:url("https://images.anime-pictures.net/1cc/1cccb3f5d8dcad1f032256c9f21cea9f.png?if=ANIME-PICTURES.NET_-_739242-1396x911-original-sakyumama+%28kedama+milk%29-kedama+milk-single-long+hair-looking+at+viewer.png");
+  background-size:auto 100%;
+}
+#main #body .body-content .body-content-card div:nth-child(3){
+  background:url("https://images.anime-pictures.net/ab4/ab490b2d45afccfd066e430f9d424060.jpg?if=ANIME-PICTURES.NET_-_739395-4921x2894-original-asakishoten-single-long+hair-looking+at+viewer-blush.jpg");
+  background-size:auto 100%;
+}
+#main #body .body-content .body-content-card div:nth-child(3){
+  background:url("https://images.anime-pictures.net/7c0/7c0099e4760774cdbed4375e80f6bd76.jpg?if=ANIME-PICTURES.NET_-_738905-2067x1181-virtual+youtuber-hololive-shirogane+noel-niii+%28memstapak%29-single-long+hair.jpg");
+  background-size:auto 100%;
+}
+#main #body .body-content .body-content-card div:nth-child(4){
+  background:url("https://images.anime-pictures.net/e20/e20978e86e2c1a3571c0e644362aa644.jpeg?if=ANIME-PICTURES.NET_-_739129-1842x1302-virtual+youtuber-indie+virtual+youtuber-kusumi+neneko-saraki-single-looking+at+viewer.jpeg");
+  background-size:auto 100%;
+}
+#main #body .body-content .body-content-card div:nth-child(5){
+  background:url("https://images.anime-pictures.net/c29/c29272d109e486ad3129b2fa8e31a84f.jpg?if=ANIME-PICTURES.NET_-_738293-1920x1080-original-heishan-single-looking+at+viewer-blush-fringe.jpg");
+  background-size:auto 100%;
+}
+#main #body .body-content .body-content-card div:nth-child(6){
+  background:url("https://images.anime-pictures.net/969/9698ed0200d906d6be3e230b3073960c.jpeg?if=ANIME-PICTURES.NET_-_738858-1555x908-original-kinokohime-single-long+hair-fringe-open+mouth.jpeg");
+  background-size:auto 100%;
+}
+#main #body .body-content .body-content-card div:nth-child(7){
+  background:url("https://images.anime-pictures.net/3be/3bedf62cfdebfc175a0eda19c4a0e9d9.png?if=ANIME-PICTURES.NET_-_729141-1920x1080-virtual+youtuber-nijisanji-sister+cleaire-yaye-single-long+hair.png");
+  background-size:auto 100%;
+}
+@media screen and (max-width: 911px) {
+  #body{
+    visibility:hidden;
+  }
+    #main #header h1{
+    font-size:4vh;
+  }
+  #main #header .header-desc{
+    font-size:2vh;
+  }
+  #main #header{
+    margin-top:7vh;
+    width:70vw;line-height:7vh;
+  }
+}
+/* @media screen and (max-width:750px) {
+  #main #header h1{
+    font-size:3vh;
+  }
+  #main #header{
+    width:70vw;
+  }
+} */
