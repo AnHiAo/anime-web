@@ -75,30 +75,27 @@
            </div>
           </div>
         </div>
+        <div id="footer" style="margin-top: 7vh;">
+          OvO
+        </div>
       </div>
-      <script>
-        // document.querySelectorAll("video").forEach(v=>{
-        //   v.onmouseover=function(){
-        //     v.setAttribute("controls","true")
-        //   };
-        //   v.onmouseout=function(){
-        //     v.removeAttribute("controls");
-        //     // v.setAttribute("controls","false")
-        //   }
-        // })
-      </script>
       <script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
               <script>
-              
-              BetterScroll.createBScroll(document.querySelector(".body-content"), {
+    
+              </script>
+    <script>
+        onload=function(){
+          if(window.innerWidth > 911) {
+      let cards_bs = BetterScroll.createBScroll(document.querySelector(".body-content"), {
                   movable: true,
                   scrollX: true,
                   scrollY:false,
                   minSize :1,
                   scrollbar: true, 
                   mouseWheel: true,
-                  click:true,});
-              </script>
+                  click:true,});}
+        }
+    </script>
     <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
 </body>
 </html>
