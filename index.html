@@ -106,6 +106,8 @@
       //   document.querySelector("#main").style.transform=`translateY(-${test+=5}px)`
       //   e.preventDefault();
       // })
+      let testopacity = 0;
+   let test2light = 1;
         onload=function(){
           if(window.innerWidth > 911) {
       let cards_bs = BetterScroll.createBScroll(document.querySelector(".body-content"), {
@@ -131,21 +133,28 @@
     const hooks = testbs.scroller.actionsHandler.hooks
    let realY = 70;
    let realTop = 100;
-   let testopacity = 0;
+  
   testbs.on('scrollStart', () => {console.log("scrollStart")})
   testbs.on("scrollCancel",()=>console.log("scrollCancel"))
   testbs.on("scroll",(position)=>{
     scrollY = position.y;
     if(testbs.movingDirectionY === -1){
-      
-      if (testopacity > 0 && 
+      if(test2light <= 1){
+        console.log("do light")
+        document.querySelector("body").style.backdropFilter=`brightness(${test2light +=.003})`;
+      }
+      if (testopacity >= 0 && 
       document.getElementById("body").getBoundingClientRect().top - window.innerHeight > 0
       ){
         document.getElementById("body").style.opacity = (testopacity -=.007);
         console.log("started opacity -=")
       }
     }else{
-      if(testopacity <1 && (
+      if(test2light >= 0){
+        console.log("do light2")
+        document.querySelector("body").style.backdropFilter=`brightness(${test2light -=.003})`;
+      }
+      if(testopacity <=1 && (
         document.getElementById("body").getBoundingClientRect().top - window.innerHeight < 0
       )){
         console.log("started opacity +=")
