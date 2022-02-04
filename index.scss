@@ -81,6 +81,7 @@ font-style:normal;
 #main #body .body-content .body-content-cards .body-content-card{
   width: 25vw;
   height: 14vw;
+
   border-radius:7px;
 }
 #main #body .body-content .body-content-cards div[class = 'vjs-poster']{
@@ -242,8 +243,8 @@ font-style:normal;
     font-family: 'Zen Maru Gothic';
 }
   #main #body .body-content .body-content-cards .body-content-card{
-    width: 70vw;
-    height: 40vw;
+    width: 94vw;
+    height: auto;
     border-radius:7px;
   }
   .video-js .vjs-big-play-button {
