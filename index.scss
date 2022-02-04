@@ -138,6 +138,8 @@ font-style:normal;
   display: flex;flex-wrap: wrap;justify-content: space-around;
 }
 #main #footer .footer-content >ul >li{
+  border: 1vw dashed ;
+  padding: .7vw;
   max-width: 590px;
 }
 #main #footer .footer-content >ul >li .footer-li-img{
@@ -179,6 +181,13 @@ font-style:normal;
   overflow-x: clip;
   inset: 0;text-decoration-style: wavy;
 }
+#main #footer .footer-content .footer-content-end-cover{
+  height: 30vh;
+  overflow: hidden;
+}
+#main #footer .footer-content .footer-content-end-cover img{
+  width: 100%;
+}
 // #main #footer .footer-content iframe{
 //   width: 100%;
 //   height: 50vh;
@@ -188,6 +197,7 @@ font-style:normal;
     background-size: 100% 70vw,100% auto,100% 100% !important;
     background-repeat: no-repeat,no-repeat,no-repeat !important;
     background-position: 100% 70%,100% 70%,center center !important;
+    mask-image: linear-gradient(to top, #000 97%, #0000 );
     // background-position: right center,100% 30%,center center;
   }
   #main{
@@ -195,11 +205,20 @@ font-style:normal;
     white-space: nowrap;
     overflow: hidden;
   }
+  // body .main-mask{
+  //   width: 100%;
+  //   height: 7vh;
+  //   // background: red;
+  //   position: fixed;
+  //   z-index: 2;
+  // }
     #main #header h1{
-    font-size:4vh;
+    font-size:3.7vh;line-height: 6vh;
   }
   #main #header .header-desc{
-    font-size:2vh;
+    font-size: 1.7vh;
+    line-height: 1.3;
+    margin-top: 3vh;
   }
   #main #header{
     margin-top:0;
@@ -209,7 +228,6 @@ font-style:normal;
     padding: 3vh 0px;
   }
   #main #body {
-    margin-top: 100vh;
     color: #fff;
     font-family: 'Zen Maru Gothic';
 }
@@ -246,6 +264,22 @@ font-style:normal;
   #main #footer{
   }
   #main #body{
+    opacity: 0;
+  }
+}
+@keyframes opacityTransitionMotion-On{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes opacityTransitionMotion-Off{
+  0%{
+    opacity: 1;
+  }
+  100%{
     opacity: 0;
   }
 }

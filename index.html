@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Test</title>
     <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="https://at.alicdn.com/t/font_3166956_xl1ufno3r6k.css"> -->
     <link rel="stylesheet" href="vplugin.css">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+  <div class="main-mask"></div>
     <div id="main">
       <div class="main-content">
         <div id="header">
@@ -65,33 +65,38 @@
           <div class="footer-title">Special</div>
           <div class="footer-content">
             <ul>
-              <li>
-                <div class="footer-li-img"><img src="https://bisquedoll-anime.com/assets/img/special/bnr_wallpaper.jpg" alt="Twitterアカウントフォロワー記念デジコンプレゼント" onmousedown="return false" oncopy="return false" onselectstart="return false" oncontextmenu="return false"></div>
-                <div class="footer-li-title">Twitterアカウントフォロワー記念デジコンプレゼント</div>
-                <a href="https://bisquedoll-anime.com/wallpaper/" class="u-hover__opacity" target="_blank" rel="noopener">その着せ替え人形は恋をする</a>
-              </li>
-              <li>
+ 
+              <li style="border-color: rgb(98, 46, 146);" >
                 <div class="footer-li-img"><img src="https://bisquedoll-anime.com/assets/img/special/bnr_dododo.jpg" alt="Twitterアカウントフォロワー記念デジコンプレゼント" onmousedown="return false" oncopy="return false" onselectstart="return false" oncontextmenu="return false"></div>
                 <div class="footer-li-title">そのドッドッドッボタンは止まらない</div>
-                <a href="https://bisquedoll-anime.com/dododo/" class="u-hover__opacity" target="_blank" rel="noopener">その着せ替え人形は恋をする</a>
-              </li>
-              <li>
+                <a href="https://bisquedoll-anime.com/dododo/" class="u-hover__opacity" target="_blank" rel="noopener"></a>
+              </li style="border-color:rgb(252, 234, 184);">
+              <li style="border-color: rgb(252, 234, 184);">
                 <div class="footer-li-img"><img src="https://bisquedoll-anime.com/assets/img/special/bnr_newyear.jpg" alt="Twitterアカウントフォロワー記念デジコンプレゼント" onmousedown="return false" oncopy="return false" onselectstart="return false" oncontextmenu="return false"></div>
                 <div class="footer-li-title">お正月壁紙プレゼント</div>
-                <a href="https://bisquedoll-anime.com/newyear/" class="u-hover__opacity" target="_blank" rel="noopener">その着せ替え人形は恋をする</a>
+                <a href="https://bisquedoll-anime.com/newyear/" class="u-hover__opacity" target="_blank" rel="noopener"></a>
               </li>
-              <li>
+              <li style="border-color: rgb(245, 216, 220);">
                 <div class="footer-li-img"><img src="https://bisquedoll-anime.com/assets/img/special/bnr_xmas.jpg" alt="Twitterアカウントフォロワー記念デジコンプレゼント" onmousedown="return false" oncopy="return false" onselectstart="return false" oncontextmenu="return false"></div>
                 <div class="footer-li-title">クリスマス壁紙プレゼント</div>
-                <a href="https://bisquedoll-anime.com/xmas/" class="u-hover__opacity" target="_blank" rel="noopener">その着せ替え人形は恋をする</a>
+                <a href="https://bisquedoll-anime.com/xmas/" class="u-hover__opacity" target="_blank" rel="noopener"></a>
               </li>
-              <li>
+              <li style="border-color: rgb(255, 154, 22);">
                 <div class="footer-li-img"><img src="https://bisquedoll-anime.com/assets/img/bnr_halloween.jpg" alt="Twitterアカウントフォロワー記念デジコンプレゼント" onmousedown="return false" oncopy="return false" onselectstart="return false" oncontextmenu="return false"></div>
                 <div class="footer-li-title">ハロウィン壁紙プレゼント</div>
-                <a href="https://bisquedoll-anime.com/halloween/" class="u-hover__opacity" target="_blank" rel="noopener">その着せ替え人形は恋をする</a>
+                <a href="https://bisquedoll-anime.com/halloween/" class="u-hover__opacity" target="_blank" rel="noopener"></a>
               </li>
-             
+              <li style="border-color: rgb(255, 238, 140);">
+                <div class="footer-li-img"><img src="https://bisquedoll-anime.com/assets/img/special/bnr_wallpaper.jpg" alt="Twitterアカウントフォロワー記念デジコンプレゼント" onmousedown="return false" oncopy="return false" onselectstart="return false" oncontextmenu="return false"></div>
+                <div class="footer-li-title">Twitterアカウントフォロワー記念デジコンプレゼント</div>
+                <a href="https://bisquedoll-anime.com/wallpaper/" class="u-hover__opacity" target="_blank" rel="noopener"></a>
+              </li>
             </ul>
+          <div class="footer-content-end-cover">
+            <img src="https://bisquedoll-anime.com/assets/teaser/img/marin/footer_bg_sp.png" />
+
+          </div> 
+
             <!-- <iframe allowtransparency="true"  scrolling="" src="https://iframes-ten.vercel.app/HAPPYHALOWEEN.html"></iframe> -->
           </div>
         </div>
@@ -101,13 +106,10 @@
       <script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
     <script>
       let test = 0;
-      // document.querySelector("#main").addEventListener("mousewheel",function(e){
-      //   console.log("mousewhell");
-      //   document.querySelector("#main").style.transform=`translateY(-${test+=5}px)`
-      //   e.preventDefault();
-      // })
       let testopacity = 0;
-   let test2light = 1;
+      let test2light = 1;
+      let testEpsideosIsMove = false; 
+      let testEpsideosAddStep = .005; 
         onload=function(){
           if(window.innerWidth > 911) {
       let cards_bs = BetterScroll.createBScroll(document.querySelector(".body-content"), {
@@ -118,9 +120,7 @@
                   scrollbar: true, 
                   mouseWheel: true,
                   click:true,});};
-
-
-                  let testbs = BetterScroll.createBScroll(document.getElementById("main"),{
+      let testbs = BetterScroll.createBScroll(document.getElementById("main"),{
                 probeType:3,
                 movable:true,
                 scrollY:true,
@@ -128,41 +128,50 @@
                 mouseWheel: true,
                 minSize :1,
                 click:true,
+                bounceTime:500,
              });
     let y = 70;
     const hooks = testbs.scroller.actionsHandler.hooks
    let realY = 70;
    let realTop = 100;
-  
+   let rgblackvalue = 0;
   testbs.on('scrollStart', () => {console.log("scrollStart")})
   testbs.on("scrollCancel",()=>console.log("scrollCancel"))
   testbs.on("scroll",(position)=>{
     scrollY = position.y;
+    testEpsideosIsMove = false;
+  
     if(testbs.movingDirectionY === -1){
+      /* down move */
       if(test2light <= 1){
         console.log("do light")
-        document.querySelector("body").style.backdropFilter=`brightness(${test2light +=.003})`;
+        document.getElementById("body").style.opacity=`${1- (rgblackvalue / 100)}`;
+        document.querySelector("body").style.backdropFilter=`brightness(${rgblackvalue / 100})`;
       }
-      if (testopacity >= 0 && 
-      document.getElementById("body").getBoundingClientRect().top - window.innerHeight > 0
-      ){
-        document.getElementById("body").style.opacity = (testopacity -=.007);
-        console.log("started opacity -=")
-      }
+      // if (testopacity >= 0 && 
+      // // document.getElementById("body").getBoundingClientRect().top - window.innerHeight > 0
+      // testEpsideosIsMove
+      // ){
+      //   document.getElementById("body").style.opacity = (testopacity -=(rgblackvalue / 1700));
+      //   console.log("started opacity -=")
+      // }
     }else{
+      /* up move */
       if(test2light >= 0){
         console.log("do light2")
-        document.querySelector("body").style.backdropFilter=`brightness(${test2light -=.003})`;
+        document.getElementById("body").style.opacity=`${1- (rgblackvalue / 100)}`;
+        document.querySelector("body").style.backdropFilter=`brightness(${rgblackvalue / 100})`;
       }
-      if(testopacity <=1 && (
-        document.getElementById("body").getBoundingClientRect().top - window.innerHeight < 0
-      )){
-        console.log("started opacity +=")
-        document.getElementById("body").style.opacity = (testopacity +=.007)
-      }
+      // if(testopacity <=1 && (
+      //   !testEpsideosIsMove
+      //   // document.getElementById("body").getBoundingClientRect().top - window.innerHeight < 0
+      // )){
+      //   console.log("started opacity +=")
+      //   document.getElementById("body").style.opacity = (testopacity += (rgblackvalue / 1700))
+      // }
       
     }
-    document.body.style.setProperty(`--rgblackvalue`,`${(100+(scrollY/3))}%`)
+    document.body.style.setProperty(`--rgblackvalue`,`${( rgblackvalue = (100+(scrollY/3)))}%`)
     if(parseInt( document.body.style.getPropertyValue(`--rgwhitevalue`))
       < 70
     ){
@@ -197,37 +206,28 @@
     else{
       document.body.style.setProperty(`--rgwhitevalue`,`${(100+(scrollY/2.7))}%`)
     }
-    // document.body.style.setProperty(`--rgblackvalue`,`${(70+(scrollY/13))}%`)
-    // document.body.style.setProperty(`--rgwhitevalue`,`${(100+(scrollY/3))}%`)
+    /* change radial-gradient value */
+
+
+    // if(rgblackvalue < 50 && rgblackvalue >0){
+    //   console.log(rgblackvalue)
+    //   testEpsideosIsMove = true;
+    //   document.getElementById("body").style.animation=`opacityTransitionMotion-On .5s ease-in-out forwards`;
+    // }
+    // if(rgblackvalue > 50 ){
+    //   console.log(rgblackvalue)
+    //   testEpsideosIsMove = true;
+    //   document.getElementById("body").style.animation=`opacityTransitionMotion-Off .5s ease-in-out forwards`;
+    // }
   })
   testbs.on('scrollEnd', () => {
-    console.log(`scrollEnd`);
-  })
+  console.log(testbs.y)
 
+  })
 
         }
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/better-scroll/2.4.2/better-scroll.min.js" integrity="sha512-pFKFFZLb5WRYdK2dx8jM5fblHOtZXGWVTZSMWonOwMXBez2r8RjLa05f7tv+ZGH2zAGY0aQnUcxAeBWOqTAD8w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
-    <script>
-     
-  // testbs.on('alterOptions', (mouseWheelOptions) => {
-  //   console.log(mouseWheelOptions);
-  //   /**
-  //    * mouseWheelOptions.speed：鼠标滚轮滚动的速度
-  //    * mouseWheelOptions.invert：滚轮滚动和 BetterScroll 滚动的方向是否一致
-  //    * mouseWheelOptions.easeTime：滚动动画的缓动时长。
-  //    * mouseWheelOptions.discreteTime：触发 wheelEnd 的间隔时长
-  //    * mouseWheelOptions.throttleTime：滚轮滚动是高频率的动作，因此可以通过 throttleTime 来限制触发频率
-  //    * mouseWheelOptions.dampingFactor：阻尼因子，当超出边界会施加阻力
-  //    **/
-  // })
-  // const hooks2 = testbs.scroller.actions.hooks
-  // hooks2.on('beforeEnd', (pos, duration) => {
-  //   console.log("beforeend")
-  //   if(y > 70) {y=70;document.body.style.setProperty(`--rgblackvalue`,`${y}%`)};
-  //   // if(y < 0) {y = 0;document.body.style.setProperty(`--rgblackvalue`,`${y}%`)};
-  // })
-  </script>
   </body>
 </html>
