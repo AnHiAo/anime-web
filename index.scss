@@ -1,6 +1,5 @@
 // @import url("https://at.alicdn.com/t/font_3166956_xl1ufno3r6k.css");
 @import url("https://fonts.googleapis.cn/css?family=Zen%20Maru%20Gothic");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Noto+Sans+JP:wght@300;500&display=swap");
 *,*::before,*::after{
   margin:0;padding:0;
   box-sizing:border-box;
@@ -16,6 +15,54 @@ min-height: 100vh;
     background-size: 100% 50%,77% auto,100% 100%;
     background-repeat: no-repeat,no-repeat,no-repeat;
     background-position: 100% 0,100% 0,center center;}
+    .loading-svg{
+      z-index: 4;
+      position: absolute;
+      inset:0;
+      display: grid;
+      place-items: center;
+      background: black;
+    }
+    .loading-svg svg{
+    
+      transform:scale(1);
+    }
+    .loading-svg svg path{
+      transition: opacity .4s ease-in-out;
+      stroke:#FFC0D3;
+      stroke-width:70px;
+      stroke-dasharray: 1700;
+      stroke-dashoffset: 300;
+      animation:testMotion 60s linear infinite,testFillMotion 7s ease-in-out infinite;
+    }
+    @keyframes testMotion{
+      0%{
+             stroke-dasharray: 1300;
+        stroke-dashoffset: 300;
+      }
+      100%{
+             
+        stroke-dashoffset: 99999;
+      }
+    }
+    @keyframes testFillMotion{
+      0%{
+        fill:rgb(160, 94, 217);
+      }
+      25%{
+        fill:#E1E5EA;
+      }
+      50%{
+        fill:#A7BBC7;
+      }
+      75%{
+        fill:#DA7F8F;
+      }
+      100%{
+         fill:rgb(160, 94, 217);
+      }
+    }
+
 #main{
   padding-left:3vw;
   position: absolute;
@@ -165,8 +212,7 @@ font-style:normal;
   line-height: 2;
   padding-bottom: 1.7vh;
   letter-spacing: normal;
-  font-family: YakuHanJP, 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', '游ゴシック', YuGothic,
-  'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, Arial, 'メイリオ', Meiryo, sans-serif;
+  font-family: 'Zen Maru Gothic';
 }
 #main #footer .footer-content >ul >li{
   position: relative;
