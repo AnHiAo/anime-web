@@ -100,28 +100,22 @@
           <div class="footer-title">Special</div>
           <div class="footer-content">
             <ul>
- 
-              <li style="border-color: rgb(98, 46, 146);" >
-                <div class="footer-li-img"><img src="https://bisquedoll-anime.com/assets/img/special/bnr_dododo.jpg" alt="Twitterアカウントフォロワー記念デジコンプレゼント" onmousedown="return false" oncopy="return false" onselectstart="return false" oncontextmenu="return false"></div>
-                <div class="footer-li-title">そのドッドッドッボタンは止まらない</div>
-                <a href="https://bisquedoll-anime.com/dododo/" class="u-hover__opacity" target="_blank" rel="noopener"></a>
-              </li style="border-color:rgb(252, 234, 184);">
-              <li style="border-color: rgb(252, 234, 184);">
+              <li style="border-color: rgb(233, 193, 79);background: url(https://bisquedoll-anime.com/assets/img/special/newyear/bg.png);">
                 <div class="footer-li-img"><img src="https://bisquedoll-anime.com/assets/img/special/bnr_newyear.jpg" alt="Twitterアカウントフォロワー記念デジコンプレゼント" onmousedown="return false" oncopy="return false" onselectstart="return false" oncontextmenu="return false"></div>
                 <div class="footer-li-title">お正月壁紙プレゼント</div>
                 <a href="https://bisquedoll-anime.com/newyear/" class="u-hover__opacity" target="_blank" rel="noopener"></a>
               </li>
-              <li style="border-color: rgb(245, 216, 220);">
+              <li style="border-color: rgb(185, 55, 55);background: url(https://bisquedoll-anime.com/assets/img/special/xmas/bg_pattern.png) rgb(245, 229, 230);background-size: 100% auto;">
                 <div class="footer-li-img"><img src="https://bisquedoll-anime.com/assets/img/special/bnr_xmas.jpg" alt="Twitterアカウントフォロワー記念デジコンプレゼント" onmousedown="return false" oncopy="return false" onselectstart="return false" oncontextmenu="return false"></div>
                 <div class="footer-li-title">クリスマス壁紙プレゼント</div>
                 <a href="https://bisquedoll-anime.com/xmas/" class="u-hover__opacity" target="_blank" rel="noopener"></a>
               </li>
-              <li style="border-color: rgb(255, 154, 22);">
+              <li style="border-color: rgb(48, 44, 43); background: url(https://bisquedoll-anime.com/assets/teaser/img/halloween/bg.png);">
                 <div class="footer-li-img"><img src="https://bisquedoll-anime.com/assets/img/bnr_halloween.jpg" alt="Twitterアカウントフォロワー記念デジコンプレゼント" onmousedown="return false" oncopy="return false" onselectstart="return false" oncontextmenu="return false"></div>
                 <div class="footer-li-title">ハロウィン壁紙プレゼント</div>
                 <a href="https://bisquedoll-anime.com/halloween/" class="u-hover__opacity" target="_blank" rel="noopener"></a>
               </li>
-              <li style="border-color: rgb(255, 238, 140);">
+              <li style="border-color: rgb(68, 118, 193);background: url(https://bisquedoll-anime.com/assets/img/special/wallpaper/bg_pattern.png) rgb(255, 238, 140);background-size: 100% auto;">
                 <div class="footer-li-img"><img src="https://bisquedoll-anime.com/assets/img/special/bnr_wallpaper.jpg" alt="Twitterアカウントフォロワー記念デジコンプレゼント" onmousedown="return false" oncopy="return false" onselectstart="return false" oncontextmenu="return false"></div>
                 <div class="footer-li-title">Twitterアカウントフォロワー記念デジコンプレゼント</div>
                 <a href="https://bisquedoll-anime.com/wallpaper/" class="u-hover__opacity" target="_blank" rel="noopener"></a>
@@ -181,6 +175,7 @@
    let realY = 70;
    let realTop = 100;
    let rgblackvalue = 0;
+   let rgbrightnessValue = 0;
   testbs.on('scrollStart', () => {console.log("scrollStart")})
   testbs.on("scrollCancel",()=>console.log("scrollCancel"))
   testbs.on("scroll",(position)=>{
@@ -196,16 +191,21 @@
       /* down move */
       if(test2light <= 1){
         console.log("do light")
-        document.getElementById("body").style.opacity=`${1- (rgblackvalue / 100)}`;
-        document.querySelector("body").style.backdropFilter=`brightness(${rgblackvalue / 100})`;
+        // document.getElementById("body").style.opacity=`${1- (rgblackvalue / 100)}`;
+        document.querySelector("body").style.backdropFilter=`brightness(${rgbrightnessValue = rgblackvalue / 100})`;
       }
     }else{
       /* up move */
-      if(test2light >= 0){
+    if(test2light >= 0){
         console.log("do light2")
-        document.getElementById("body").style.opacity=`${1- (rgblackvalue / 100)}`;
-        document.querySelector("body").style.backdropFilter=`brightness(${rgblackvalue / 100})`;
+        // document.getElementById("body").style.opacity=`${1- (rgblackvalue / 100)}`;
+        document.querySelector("body").style.backdropFilter=`brightness(${rgbrightnessValue = rgblackvalue / 100})`;
       }
+    }
+    if(rgbrightnessValue < .2){
+      document.getElementById("body").style.opacity = '1';
+    }else{
+      document.getElementById("body").style.opacity = '0';
     }
     document.body.style.setProperty(`--rgblackvalue`,`${( rgblackvalue = (100+(scrollY/3)))}%`)
     if(parseInt( document.body.style.getPropertyValue(`--rgwhitevalue`))
@@ -244,6 +244,7 @@
     }
   })
   testbs.on('scrollEnd', () => {
+   
   });
   window.onload=function(){
     document.querySelectorAll("img").forEach(v=>v.onload=function(){

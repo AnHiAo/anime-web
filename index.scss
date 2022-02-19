@@ -185,7 +185,8 @@ font-style:normal;
 #main #footer .footer-content{
   // width: 70vw;
   margin-right: 3vw;
-  background: url(https://bisquedoll-anime.com/assets/teaser/img/marin/logo.png) no-repeat,url(https://bisquedoll-anime.com/assets/img/common/bg_1.png),linear-gradient(180deg, #ffe3e2 0%, #fffef2 50%, white 100%);
+  
+  background:url(https://bisquedoll-anime.com/assets/teaser/img/marin/logo.png) no-repeat,url(https://bisquedoll-anime.com/assets/img/common/bg_2.png),linear-gradient(180deg, #e5d6f7 0%, #ffecf2 70%, white 100%);
   margin-bottom: 10vh;
   background-size: 37% auto,100%;
   border-radius: 10px;
@@ -287,6 +288,7 @@ font-style:normal;
   #main #body {
     color: #fff;
     font-family: 'Zen Maru Gothic';
+    transition: opacity .47s ease-in-out;
 }
   #main #body .body-content .body-content-cards .body-content-card{
     width: 94vw;
