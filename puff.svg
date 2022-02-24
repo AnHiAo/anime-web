@@ -1,5 +1,5 @@
 <!-- By Sam Herbert (@sherb), for everyone. More @ http://goo.gl/7AJzbL -->
-<svg  viewBox="0 0 44 44" width="100" height="100" xmlns="http://www.w3.org/2000/svg" stroke="#fff" style="margin:0 auto;background:#2C3E50;min-height:100vh;line-height:100vh;">
+<svg  viewBox="0 0 44 44" width="560" height="315" xmlns="http://www.w3.org/2000/svg" stroke="#fff" style="margin:0 auto;background:#2C3E50;min-height:100vh;line-height:100vh;">
     <g fill="none" fill-rule="evenodd" stroke-width="2">
         <circle cx="22" cy="22" r="1">
             <animate attributeName="r"
