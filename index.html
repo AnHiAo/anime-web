@@ -210,7 +210,7 @@
     })
   });
   document.addEventListener('DOMContentLoaded', async function () {
-    const result = await fetch("http://rap2api.taobao.org/app/mock/297982/anime",{method:"GET"});
+    const result = await fetch("https://rap2api.taobao.org/app/mock/297982/anime",{method:"GET"});
         const result_json = (await result.json());
         result_json['videos'].forEach((v,k)=>{
           videos_html +=`
