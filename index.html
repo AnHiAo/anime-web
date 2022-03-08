@@ -204,7 +204,7 @@
     })
   });
   document.addEventListener('DOMContentLoaded', async function () {
-    const result = await fetch("https://mockapi.eolink.com/DSyXl539b4bf5cdb7381fe38284a05d44d0631cf253c095/anime",{method:"GET"});
+    const result = await fetch("https://restfulapi.cf/anime?name=更衣人偶坠入爱河",{method:"GET"});
         const result_json = (await result.json());
         result_json['videos'].forEach((v,k)=>{
           videos_html +=`
