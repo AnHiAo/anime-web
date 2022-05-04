@@ -95,7 +95,7 @@ body{
 #main #header{
     line-height:5vw;
     margin-top:10vh;
-    width:30vw;
+    width:100vw;
     color:#fff;
     font-family:"Zen Maru Gothic"
 }
@@ -111,7 +111,8 @@ body #down-svg svg{
     height:100%
 }
 #main #header h1{
-    font-size:3vw;
+    width:33.333vw;
+    font-size:6vw;
     white-space:pre-wrap
 }
 #main #header .header-category-name{
