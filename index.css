@@ -6,7 +6,8 @@
 }
 body{
     display:flex;
-    justify-content:center;
+/*     display:flex;
+    justify-content:center; */
     --rgblackvalue:100%;
     --rgwhitevalue:100%;
     min-height:100vh;
