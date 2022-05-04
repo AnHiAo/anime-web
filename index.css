@@ -111,7 +111,7 @@ body #down-svg svg{
     height:100%
 }
 #main #header h1{
-    width:33.333vw;
+    width:66.666vw;
     font-size:6vw;
     white-space:pre-wrap
 }
@@ -119,6 +119,7 @@ body #down-svg svg{
     font-size:1.3rem
 }
 #main #header .header-desc{
+    width:100%;
     white-space:pre-wrap;
     color:#ccc;
     line-height:3vh;
