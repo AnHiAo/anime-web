@@ -42,9 +42,9 @@ body {
   stroke-width: 5px;
   stroke-dasharray: 130;
   stroke-dashoffset: 100;
-  -webkit-animation: testMotion 60s linear infinite,
+  -webkit-animation: testMotion 120s linear infinite,
     testFillMotion 7s ease-in-out infinite;
-  animation: testMotion 60s linear infinite,
+  animation: testMotion 120s linear infinite,
     testFillMotion 7s ease-in-out infinite;
 }
 @-webkit-keyframes testMotion {
