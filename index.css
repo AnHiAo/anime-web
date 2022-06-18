@@ -34,7 +34,7 @@ body {
   background: #eef2ff;
 }
 .loading-svg svg {
-  transform: scale(1);
+  transform: scale(.9);
 }
 .loading-svg svg path:last-child {
   transition: opacity 0.4s ease-in-out;
