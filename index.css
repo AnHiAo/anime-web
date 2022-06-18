@@ -121,8 +121,8 @@ body #down-svg svg {
 }
 #main #header h1 {
   width: 66.666%;
-  font-size: 6vw;
-  line-height:6.777vw;
+  font-size: 7vw;
+  line-height:3.777vw;
   white-space: pre-wrap;
 }
 #main #header .header-category-name {
