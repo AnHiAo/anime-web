@@ -292,6 +292,16 @@ body #down-svg svg {
 
 
 
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 911px) {
   body {
     background-size: 100% 70vw, 100% auto, 100% 100% !important;
@@ -308,7 +318,7 @@ body #down-svg svg {
   #main #header h1 {
     width: 70%;
     font-size: 7vw;
-    letter-spacing: 0.7vw;
+    letter-spacing: 0.333vw;
     line-height: 8.777vw;
     
   }
