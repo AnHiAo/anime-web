@@ -21,7 +21,8 @@ body {
     url(https://my-img.cc/i/2022/06/18/62ada09262c07.png) no-repeat, #000;
   background-size: 100% 50%, 77% auto, 100% 100%;
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 100% 0, 100% 0, center center;
+/*   background-position: 100% 0, 100% 0, center center;  pc*/
+  background-position:100% 0, 100% 0, center bottom;
 }
 .loading-svg {
   z-index: 4;
