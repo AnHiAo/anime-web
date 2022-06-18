@@ -18,13 +18,14 @@ body {
       #0000 var(--rgwhitevalue),
       #000 var(--rgblackvalue)
     ),
-    url(https://my-img.cc/i/2022/06/18/62ada09262c07.png) no-repeat, #000;
+    url(https://my-img.cc/i/2022/06/18/62ada6f589492.png) no-repeat, #000;
   background-size: 100% 50%, 77% auto, 100% 100%;
   background-repeat: no-repeat, no-repeat, no-repeat;
 /*   background-position: 100% 0, 100% 0, center center;  pc*/
   background-position:100% 0, 100% 0, center center;
 }
 .loading-svg {
+  opacity:0;
   z-index: 4;
   position: absolute;
   inset: 0;
