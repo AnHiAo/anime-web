@@ -103,7 +103,7 @@ body {
   position: absolute;
 }
 #main #header {
-
+  
   margin-top: 10vh;
   width: 97vw;
   color: #fff;
@@ -125,6 +125,7 @@ body #down-svg svg {
   font-size: 7vw;
   line-height:7.333vw;
   white-space: pre-wrap;
+  word-break: break-all;
 }
 #main #header .header-category-name {
   font-size: 1.3rem;
