@@ -34,14 +34,14 @@ body {
   background: #eef2ff;
 }
 .loading-svg svg {
-  transform: scale(.3);
+  transform: scale(.7);
 }
 .loading-svg svg path:last-child {
   transition: opacity 0.4s ease-in-out;
   stroke: #ffc0d3;
   stroke-width: 5px;
-  stroke-dasharray: 1700;
-  stroke-dashoffset: 300;
+  stroke-dasharray: 130;
+  stroke-dashoffset: 100;
   -webkit-animation: testMotion 60s linear infinite,
     testFillMotion 7s ease-in-out infinite;
   animation: testMotion 60s linear infinite,
@@ -49,8 +49,8 @@ body {
 }
 @-webkit-keyframes testMotion {
   0% {
-    stroke-dasharray: 1300;
-    stroke-dashoffset: 300;
+    stroke-dasharray: 130;
+    stroke-dashoffset: 100;
   }
   100% {
     stroke-dashoffset: 99999;
@@ -58,8 +58,8 @@ body {
 }
 @keyframes testMotion {
   0% {
-    stroke-dasharray: 1300;
-    stroke-dashoffset: 300;
+    stroke-dasharray: 130;
+    stroke-dashoffset: 100;
   }
   100% {
     stroke-dashoffset: 99999;
