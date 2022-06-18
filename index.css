@@ -288,6 +288,10 @@ body #down-svg svg {
 #main #footer .footer-content .footer-content-end-cover img {
   width: 100%;
 }
+
+
+
+
 @media screen and (max-width: 911px) {
   body {
     background-size: 100% 70vw, 100% auto, 100% 100% !important;
@@ -305,7 +309,8 @@ body #down-svg svg {
     width: 70%;
     font-size: 7vw;
     letter-spacing: 0.7vw;
-    line-height: 6vh;
+    line-height: 7.777vw;
+    
   }
   #main #header .header-desc {
     width: 100%;
