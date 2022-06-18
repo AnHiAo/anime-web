@@ -40,7 +40,7 @@ body {
   transition: opacity 0.4s ease-in-out;
   stroke: #ffc0d3;
   stroke-width: 5px;
-  stroke-dasharray: 130;
+  stroke-dasharray: 70;
   stroke-dashoffset: 100;
   -webkit-animation: testMotion 720s linear infinite,
     testFillMotion 12s ease-in-out infinite;
@@ -49,7 +49,7 @@ body {
 }
 @-webkit-keyframes testMotion {
   0% {
-    stroke-dasharray: 130;
+    stroke-dasharray: 70;
     stroke-dashoffset: 100;
   }
   100% {
@@ -58,7 +58,7 @@ body {
 }
 @keyframes testMotion {
   0% {
-    stroke-dasharray: 130;
+    stroke-dasharray: 70;
     stroke-dashoffset: 100;
   }
   100% {
