@@ -43,9 +43,9 @@ body {
   stroke-dasharray: 130;
   stroke-dashoffset: 100;
   -webkit-animation: testMotion 720s linear infinite,
-    testFillMotion 70s ease-in-out infinite;
+    testFillMotion 12s ease-in-out infinite;
   animation: testMotion 720s linear infinite,
-    testFillMotion 70s ease-in-out infinite;
+    testFillMotion 12s ease-in-out infinite;
 }
 @-webkit-keyframes testMotion {
   0% {
