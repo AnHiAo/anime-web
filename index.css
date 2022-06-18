@@ -34,12 +34,12 @@ body {
   background: #eef2ff;
 }
 .loading-svg svg {
-  transform: scale(1);
+  transform: scale(.3);
 }
-.loading-svg svg path {
+.loading-svg svg path:last-child {
   transition: opacity 0.4s ease-in-out;
   stroke: #ffc0d3;
-  stroke-width: 70px;
+  stroke-width: 5px;
   stroke-dasharray: 1700;
   stroke-dashoffset: 300;
   -webkit-animation: testMotion 60s linear infinite,
