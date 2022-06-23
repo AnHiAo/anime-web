@@ -31,10 +31,10 @@ body {
   hsl(91deg 38% 71%) 67%,
   hsl(109deg 37% 71%) 78%,
   hsl(132deg 39% 70%) 100%), #000;
-  background-size: 100% 50%, 77% auto,100% 100% ,100% 100%;
+  background-size: 100% 50%, auto 100%,100% 100% ,100% 100%;
   background-repeat: no-repeat, no-repeat,no-repeat, no-repeat;
 /*   background-position: 100% 0, 100% 0, center center;  pc*/
-  background-position:100% 0, 100% 0, center center,center center;
+  background-position:100% 0, 50% 50%, center center,center center;
 }
 .loading-svg {
   
