@@ -13,16 +13,28 @@ body {
   --rgblackvalue: 100%;
   --rgwhitevalue: 100%;
   min-height: 100vh;
+/*   background-image: */
+
   background: radial-gradient(
       circle at right,
       #0000 var(--rgwhitevalue),
       #000 var(--rgblackvalue)
     ),
-    url(https://my-img.cc/i/2022/06/18/62ada6f589492.png) no-repeat, #000;
-  background-size: 100% 50%, 77% auto, 100% 100%;
-  background-repeat: no-repeat, no-repeat, no-repeat;
+    url(https://my-img.cc/i/2022/06/18/62ada6f589492.png) no-repeat, linear-gradient(
+  185deg,
+  hsl(28deg 80% 84%) 0%,
+  hsl(34deg 69% 81%) 22%,
+  hsl(40deg 58% 78%) 33%,
+  hsl(49deg 47% 75%) 42%,
+  hsl(61deg 37% 72%) 50%,
+  hsl(75deg 38% 71%) 58%,
+  hsl(91deg 38% 71%) 67%,
+  hsl(109deg 37% 71%) 78%,
+  hsl(132deg 39% 70%) 100%), #000;
+  background-size: 100% 50%, 77% auto,100% 100% ,100% 100%;
+  background-repeat: no-repeat, no-repeat,no-repeat, no-repeat;
 /*   background-position: 100% 0, 100% 0, center center;  pc*/
-  background-position:100% 0, 100% 0, center center;
+  background-position:100% 0, 100% 0, center center,center center;
 }
 .loading-svg {
   
