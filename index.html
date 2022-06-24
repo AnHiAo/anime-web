@@ -120,7 +120,8 @@ let bs = new BScroll(wrapper, {
 setTimeout(()=>{
 
 bs.scrollBy(30,0,3000);
-// setTimeout(()=>bs.scrollBy(-30,0,3000),3000);
+ bs.once('scrollEnd', () => bs.scrollBy(-30,0,3000),3000))
+// setTimeout(()=>
 },300)
 
 </script>
